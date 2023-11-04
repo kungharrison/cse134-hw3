@@ -98,7 +98,7 @@ body {
     left: 0;
     width: 7em; /* Fallback */
     width: var(--navbar-width);
-    height: 100vh;
+    height: 100%;
     background-color: #2d2f31; /* Fallback */
     background-color: var(--secondary-color);
     display: flex;
