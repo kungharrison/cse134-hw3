@@ -7,7 +7,7 @@
     <meta name="description" content="My resume">
     <meta name="author" content="Harrison Kung">
     <meta name="keywords" content="resume">
-    <meta name="viewport" content="width=device-width, initial-scale=1000">
+    <meta name="viewport" content="width=device-width, initial-scale=100">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,6 +51,39 @@
             <span class="material-icons-outlined">attractions</span>
             <span class="nav-text">Fun Stuff</span>
         </a>
+    </nav>
+    <nav id="topbar">
+        <label for="topbar-showmenu" id="menu-container">
+            <span class="material-icons-outlined">menu</span>
+            <span id="menu-text">Menu</span>
+        </label>
+        <input type="checkbox" id="topbar-showmenu">
+        <div id="topbar-contents">
+            <a class="nav-link" href="#about-me">
+                <span class="material-icons-outlined">person</span>
+                <span class="nav-text">About Me</span>
+            </a>
+            <a class="nav-link" href="#education">
+                <span class="material-icons-outlined">school</span>
+                <span class="nav-text">Education</span>
+            </a>
+            <a class="nav-link" href="#experience">
+                <span class="material-icons-outlined">work</span>
+                <span class="nav-text">Experience</span>
+            </a>
+            <a class="nav-link" href="#skills">
+                <span class="material-icons-outlined">build</span>
+                <span class="nav-text">Skills</span>
+            </a>
+            <a class="nav-link" href="#contact">
+                <span class="material-icons-outlined">mail</span>
+                <span class="nav-text">Contact</span>
+            </a>
+            <a class="nav-link" href="#fun-stuff" id="nav-fun-stuff">
+                <span class="material-icons-outlined">attractions</span>
+                <span class="nav-text">Fun Stuff</span>
+            </a>
+        </div>
     </nav>
     <main>
         <header>
@@ -204,7 +237,7 @@
                 <h2>Fun Stuff</h2>
                 <h3>Favorite Website:</h3>
                 <p>Great website to see compiler conversion from C to assembly.</p>
-                <iframe src="https://godbolt.org/"></iframe>
+                <iframe src="http://ctoassembly.com/"></iframe>
                 <h3>ASCII Snippet:</h3>
                 <pre><code>48 65 6C 6C 6F 20 
 57 6F 72 6C 64 21</code></pre>
