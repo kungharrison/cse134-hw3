@@ -281,6 +281,10 @@ caption {
 
 @media (max-width: 700px) {
 
+    h1 {
+        padding-top: 2rem;
+    }
+
     #menu-text {
         font-size: 2rem;
         text-align: center;
