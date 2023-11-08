@@ -280,7 +280,7 @@ caption {
 }
 
 /* For Phones */
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-height: 500px) {
 
     h1 {
         padding-top: 2rem;
@@ -337,8 +337,31 @@ caption {
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 800px) or (max-height: 500px) {
     #topbar {
         display: none;
     }
 }
+
+/* For tablets */
+@media (max-height: 500px) {
+    p {
+        color: red;
+        background-color: green;
+    }
+
+    #sidebar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Create a maximum of 2 columns */
+        grid-auto-flow: row; /* Fill the grid by adding new rows as needed */
+        gap: 10px;
+        width: 14em; /* Fallback */
+        width: calc(var(--navbar-width) * 2);
+    }
+
+    body {
+        margin-left: 14em; /* Fallback */
+        margin-left: calc(var(--navbar-width) * 2);
+    }
+}
+
