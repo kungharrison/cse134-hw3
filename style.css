@@ -16,7 +16,7 @@ img {
     width: 100%;
     max-width: 30rem;
     min-width: 15rem;
-    object-fit: none;
+    object-fit: scale-down;
     object-position: center;
 }
 
@@ -267,6 +267,7 @@ caption {
     100% {color: red; transform: rotate(-10deg);}
 }
 
+/* Replaces colors for dark mode */
 @media (prefers-color-scheme: dark) {
     :root {
         --background-color: #1f1f1f;
@@ -278,7 +279,8 @@ caption {
     }
 }
 
-@media (max-width: 700px) {
+/* For Phones */
+@media (max-width: 800px) {
 
     h1 {
         padding-top: 2rem;
@@ -333,17 +335,9 @@ caption {
     #sidebar .material-icons-outlined {
         font-size: 3em;
     }
-
-    table, th, td {
-        font-size: 2rem;
-    }
-    
-    form * {
-        font-size: 2rem;
-    }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
     #topbar {
         display: none;
     }
