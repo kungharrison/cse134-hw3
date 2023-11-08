@@ -345,11 +345,6 @@ caption {
 
 /* For tablets */
 @media (max-height: 500px) {
-    p {
-        color: red;
-        background-color: green;
-    }
-
     #sidebar {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Create a maximum of 2 columns */
